@@ -205,7 +205,7 @@ func (c *groupon) step2() {
 	}
 }
 func (c *groupon) verify() {
-	body := `[{"operationName":"SignInForm","variables":{"email":"gobuild@foxmail.com","password":"asdqweqwe","rememberMe":true},"query":"mutation SignInForm($email: String!, $password: String!, $rememberMe: Boolean!) {\n  signInForm(email: $email, password: $password, rememberMe: $rememberMe) {\n    id\n    token\n    __typename\n  }\n}"}]`
+	body := `[{"operationName":"SignInForm","variables":{"email":"dfkhekjwhkjhasd@hotmail.com","password":"asdqweqwe","rememberMe":true},"query":"mutation SignInForm($email: String!, $password: String!, $rememberMe: Boolean!) {\n  signInForm(email: $email, password: $password, rememberMe: $rememberMe) {\n    id\n    token\n    __typename\n  }\n}"}]`
 	req, err := http.NewRequest(http.MethodPost, "https://www.groupon.com/mobilenextapi/graphql", strings.NewReader(body))
 
 	req.Header = http.Header{
