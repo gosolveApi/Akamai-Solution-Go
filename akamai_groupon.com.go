@@ -74,7 +74,6 @@ func (c *groupon) step1(ip string) {
 	}
 	for i := 0; i < 5; i++ {
 		_, err := c.client.Do(req)
-		//_, err := c.client.R().SetHeaders(headers).SetHeaderOrder(headerorder...).Get(urlstr)
 		if err == nil {
 			success = true
 			break
